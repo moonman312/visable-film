@@ -23,8 +23,8 @@ def hello():
 def get_sentiments():
 	if request.method == 'POST':
 		#get page sentiment
-		# sentiment = ts.get_sentiment(request.data)
-		sentiment = -1
+		sentiment = ts.get_sentiment(request.data)
+		# sentiment = -1
 
 		#get the face emotion score
 		face_score = face_detector.get_face_and_predict()
